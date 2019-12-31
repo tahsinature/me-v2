@@ -9,9 +9,9 @@ function App() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvarIdg5-Q3-FQYIS5dpLxNVnunUigx28md5Naiby9Tlzn1xvG"
           alt=""
         />
-        <h1>Hi, I am Tahsin.</h1>
+        <h1>Hi, I'm Tahsin.</h1>
         <h3>
-          I am currently developing this app with <b>React</b>.
+          I'm currently developing this app with <b>React</b>.
         </h3>
         <div>
           <p>For now visit the following:</p>
