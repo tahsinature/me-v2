@@ -10,6 +10,7 @@ function App() {
           alt=""
         />
         <h1>Hi, I'm Tahsin.</h1>
+        <h1>Test for dev</h1>
         <h3>
           I'm currently developing this app with <b>React</b>.
         </h3>
