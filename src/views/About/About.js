@@ -12,7 +12,7 @@ class About extends Component {
     return (
       <section id="about">
         <div className="row">
-          <div className="three columns">
+          <div className={["three", "columns", classes["profile-pic-holder"]].join(" ")}>
             <img className={["profile-pic", classes["profile-pic"]].join(" ")} src={profilepic} alt="Tim Baker Profile Pic" />
           </div>
           <div className="nine columns main-col">

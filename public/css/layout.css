@@ -43,12 +43,18 @@ header {
 }
 
 /* vertically center banner section */
-header:before {
+.header-continer:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
+
+.header-continer {
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
 header .banner {
   display: inline-block;
   vertical-align: middle;
