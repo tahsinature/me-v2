@@ -1,41 +1,42 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import "./App.css";
+import axios from "./axios";
+import Header from "./views/Header/Header";
+import Footer from "./views/Footer/Footer";
+import About from "./views/About/About";
+import Resume from "./views/Resume/Resume";
+// import Contact from "./views/Contact/Contact";
+// import Testimonials from "./views/Testimonials/Testimonials";
+// import Portfolio from "./views/Portfolio/Portfolio";
 
-function App() {
-  return (
-    <div className="App">
-      <div>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvarIdg5-Q3-FQYIS5dpLxNVnunUigx28md5Naiby9Tlzn1xvG"
-          alt=""
-        />
-        <h1>Hi, I'm Tahsin.</h1>
-        <h3>
-          I'm currently developing this app with <b>React</b>.
-        </h3>
-        <div>
-          <p>For now visit the following:</p>
-          <ul>
-            <li>
-              <a href="https://github.com/tahsinature">Github</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/t4h51n">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://linktr.ee/t4h51n">Linktree</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/t4h51n">Facebook</a>
-            </li>
-            <li>
-              <a href="http://instagram.com/t4h51n">Instagram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
+import AppLoader from "./components/AppLoader/AppLoader";
+
+class App extends Component {
+  state = {
+    isAppLoading: true,
+    resumeData: {}
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      axios.get("/tempfetcheddata.json").then(response => {
+        this.setState({ resumeData: response.data, isAppLoading: false });
+      });
+    }, 2000);
+  }
+  render() {
+    const content = (
+      <Fragment>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        {/* <Portfolio data={this.state.resumeData.portfolio} /> */}
+        <Footer data={this.state.resumeData.main} />
+        {/* <Testimonials data={this.state.resumeData.testimonials} /> */}
+        {/* <Contact data={this.state.resumeData.main} /> */}
+      </Fragment>
+    );
+    return <div className="App">{this.state.isAppLoading ? <AppLoader /> : content}</div>;
+  }
 }
 
 export default App;

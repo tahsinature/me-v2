@@ -1,0 +1,164 @@
+{
+  "main": {
+    "name": "Mohammad Tahsin",
+    "occupation": "Software Engineer",
+    "description": "A passionate and pragmatic programmer with 2 years of professional experience, specializing in full-stack development using modern & robust technologies.",
+    "image": "profilepic.jpg",
+    "bio": "I profetionally work with server technologies mostly. Front end development is sort of hobby. But I don't prefer to work profetionally on front end. Clean Coding, Good Practices, Following Conventions are my passion. I enjoy turning concepts into reality.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "tahsinuc@gmail.com",
+    "phone": "+6281290539936",
+    "address": {
+      "street": "(Your Street)",
+      "city": "Jakarta",
+      "state": "(Your State)",
+      "zip": "(Your Zip/Postal Code)"
+    },
+    "website": "https://tahsin.codes",
+    "resumedownload": "https://tahsin.codes",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "http://facebook.com/t4h51n",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/t4h51n",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com/t4h51n",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/t4h51n",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/tahsinature",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "University?",
+        "degree": "Masters in Beer tasting",
+        "graduated": "April 2007",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school": "School #1 Maybe College?",
+        "degree": "What did you study 101",
+        "graduated": "March 2003",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work": [
+      {
+        "company": "Halojasa",
+        "title": "Backend Engineer",
+        "years": "Feb 2019 - Present",
+        "description": "Mostly working with backend development. Working both with API driven technologies like gRPC, Rest & Event driven technologies like Google Pub/Sub, WebSockets & So on... Also having good time with software testing."
+      },
+      {
+        "company": "Laznas Dewan Da'wah",
+        "title": "Junior Frontend Developer",
+        "years": "Sep 2018 - Jan 2019",
+        "description": "Was working with Vue.js.It was exciting for me as I could finally apply the knowledge I've gained, in the real world application."
+      },
+      {
+        "company": "Sanguine Apparels LTD, Chittagong, BD",
+        "title": "IT Officer",
+        "years": "Sep 2016 - Jan 2018",
+        "description": "Mostly I was working with networking, email server, HR & Store management software & so on..."
+      },
+      {
+        "company": "Hello World Communication, Chittagong, BD",
+        "title": "Caller Agent (International)",
+        "years": "Jan 2016 - July 2016",
+        "description": "The Customer Service Representative I answers inbound calls and makes outbound calls to support Customer Service Department operations in a manner that maintains compliance with Medicare and Medi-Cal regulatory requirements and achieves Call Center service-level objectives."
+      },
+      {
+        "company": "Sync Communication, Chittagong, BD",
+        "title": "Caller Agent (International)",
+        "years": "Jul 2015 - Nov 2015",
+        "description": "I was responsible for taking both inbound and outbound calls & providing excellent, relaiable marketing information & migrate customers."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Vue.js",
+        "level": "90%"
+      },
+      {
+        "name": "React.js",
+        "level": "80%"
+      },
+      {
+        "name": "React Native",
+        "level": "60%"
+      },
+      {
+        "name": "Express.js",
+        "level": "90%"
+      },
+      {
+        "name": "Flask",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "canadian-wanderlust.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      },
+      {
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "fury-fighting-gear.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "original-thai-food.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "resume-website.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Smirkspace",
+        "category": "(MVP Only) A React and Meteor based chat University project.",
+        "image": "smirkspace.jpg",
+        "url": "http://www.smirkspace.com"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
