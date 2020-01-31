@@ -21,8 +21,8 @@ class Header extends Component {
 
     return (
       <header id="home">
+        <Nav />
         <div className="header-continer">
-          <Nav />
           <div className="row banner">
             <div className="banner-text">
               <h1 className="responsive-headline">I'm {name}.</h1>
