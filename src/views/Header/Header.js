@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../../components/Nav/Nav";
+import "animate.css";
 
 class Header extends Component {
   render() {
@@ -25,8 +26,8 @@ class Header extends Component {
         <div className="header-continer">
           <div className="row banner">
             <div className="banner-text">
-              <h1 className="responsive-headline">I'm {name}.</h1>
-              <h3>
+              <h1 className="responsive-headline animated fast bounceInDown delay-1s">I'm {name}.</h1>
+              <h3 className="animated shake delay-2s">
                 I'm a {city} based <span>{occupation}</span>. {description}.
               </h3>
               <hr />
