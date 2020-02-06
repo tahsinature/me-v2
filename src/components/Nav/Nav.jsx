@@ -29,7 +29,7 @@ class Nav extends Component {
 
         <ul id="nav" className="nav">
           {this.state.navItems.map(item => (
-            <li className={this.state.currentlyActive === item.name ? "current" : null} onClick={() => this.onClickHandler(item.name)}>
+            <li key={item.name} className={this.state.currentlyActive === item.name ? "current" : null} onClick={() => this.onClickHandler(item.name)}>
               <a className="smoothscroll" href={item.link}>
                 {item.name}
               </a>
