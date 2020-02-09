@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import classes from "./Nav.module.scss";
+import "./Nav.scss";
 class Nav extends Component {
   state = {
     currentlyActive: "Home",
@@ -27,7 +28,7 @@ class Nav extends Component {
           Hide navigation
         </a>
 
-        <ul id="nav" className="nav">
+        <ul id="nav" className={["nav", classes.Nav].join(" ")}>
           {this.state.navItems.map(item => (
             <li key={item.name} className={this.state.currentlyActive === item.name ? "current" : null} onClick={() => this.onClickHandler(item.name)}>
               <a className="smoothscroll" href={item.link}>

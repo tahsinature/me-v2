@@ -4,7 +4,8 @@
     "occupation": "Software Engineer",
     "description": "A passionate and pragmatic programmer with 2 years of professional experience, specializing in full-stack development using modern & robust technologies.",
     "image": "profilepic.jpg",
-    "bio": "I profetionally work with server technologies mostly. Front end development is sort of hobby. But I don't prefer to work profetionally on front end. Clean Coding, Good Practices, Following Conventions are my passion. I enjoy turning concepts into reality.",
+    "bio": "I profetionally work with server technologies mostly. Front end development is sort of hobby. But I don't prefer to work professionally on front end. Clean Coding, Good Practices, Following Conventions are my passion. I enjoy turning concepts into reality.",
+    "initialUrl": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Finitial.png?alt=media&token=73d5f9f2-0ef5-428a-81f5-4b8ecba0a47c",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "tahsinuc@gmail.com",
     "phone": "+6281290539936",
@@ -100,12 +101,90 @@
         "level": "60%"
       },
       {
-        "name": "Express.js",
+        "name": "Python",
         "level": "90%"
       },
       {
+        "name": "JavaScript / Node.js / TypeScript",
+        "level": "90%"
+      },
+      {
+        "name": "Java",
+        "level": "60%"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Express.js",
+        "logo": "https://cdn.spec-india.com/wp-content/uploads/2017/03/Express-JS.png"
+      },
+      {
         "name": "Flask",
-        "level": "70%"
+        "logo": "https://cdn.onlinewebfonts.com/svg/img_437027.png"
+      },
+      {
+        "name": "gRPC",
+        "logo": "https://lh3.googleusercontent.com/proxy/72tg-ChHBXqGxOd22QMxy7qEtljVhZwLUoC7jj1eWgFIOeR0W4pyVdWqKZxcXrnmTHQjqpPb5H0QfLMTdZW6kkQJFXamHJ5nIgFOqaHJ9rx12kyO5vI"
+      },
+      {
+        "name": "Socket.io",
+        "logo": "https://cdn.worldvectorlogo.com/logos/socket-io.svg"
+      },
+      {
+        "name": "Google Pub/Sub",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cloud-Pub-Sub-Logo.svg/1024px-Cloud-Pub-Sub-Logo.svg.png"
+      },
+      {
+        "name": "Jest",
+        "logo": "https://pbs.twimg.com/profile_images/821713465245102080/mMtKIMax_400x400.jpg"
+      },
+      {
+        "name": "Jesmine",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Logo_jasmine.svg/1200px-Logo_jasmine.svg.png"
+      },
+      {
+        "name": "Docker",
+        "logo": "https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-512.png"
+      },
+      {
+        "name": "Sass",
+        "logo": "https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png"
+      },
+      {
+        "name": "Gulp",
+        "logo": "https://ih0.redbubble.net/image.58958341.7561/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+      },
+      {
+        "name": "Git",
+        "logo": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+      },
+      {
+        "name": "Sequelize",
+        "logo": "https://cdn.worldvectorlogo.com/logos/sequelize.svg"
+      },
+      {
+        "name": "Redis",
+        "logo": "https://dwglogo.com/wp-content/uploads/2017/12/1100px_Redis_Logo_01.png"
+      },
+      {
+        "name": "Postgres",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "https://dwglogo.com/wp-content/uploads/2017/12/MongoDB_logo_01.png"
+      },
+      {
+        "name": "Node.js",
+        "logo": "https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png"
+      },
+      {
+        "name": "Firebase",
+        "logo": "https://cdn.dribbble.com/users/528264/screenshots/3140440/firebase_logo.png"
+      },
+      {
+        "name": "Redux",
+        "logo": "https://cdn.auth0.com/blog/redux-tutorial/logo.png"
       }
     ]
   },

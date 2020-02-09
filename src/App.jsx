@@ -21,7 +21,7 @@ class App extends Component {
       axios.get("/tempfetcheddata.json").then(response => {
         this.setState({ resumeData: response.data, isAppLoading: false });
       });
-    }, 2000);
+    }, 1);
   }
   render() {
     const content = (

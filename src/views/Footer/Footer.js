@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classes from "./Footer.module.scss";
 
 class Footer extends Component {
   render() {
@@ -15,14 +16,13 @@ class Footer extends Component {
     }
 
     return (
-      <footer>
+      <footer className={classes.Footer}>
         <div className="row">
           <div className="twelve columns">
             <ul className="social-links">{networks}</ul>
-
-            <ul className="copyright">
-              <li>&copy; Copyright 2020 Tahsin</li>
-            </ul>
+            <div className={classes.InitialBox}>
+              <img className={classes.Initial} src={this.props.data.initialUrl} alt="tahsin's-initial" />
+            </div>
           </div>
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
