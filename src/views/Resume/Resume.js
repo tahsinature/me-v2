@@ -42,7 +42,7 @@ class Resume extends Component {
         return (
           <div className={classes.Tool} key={tool.name}>
             <div className={classes.ToolContent}>
-              <img src={tool.logo} alt="tool-logo" />
+              <img src={tool.logo} alt={`${tool.name}-logo`} />
               <p>{tool.name}</p>
             </div>
           </div>
