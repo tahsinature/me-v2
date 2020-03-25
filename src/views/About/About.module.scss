@@ -1,6 +1,61 @@
-.profile-pic-holder {
+@import "../../assets/sass/main.scss";
+
+.ProfilePicHolder {
   text-align: center;
 }
-.profile-pic {
+
+.About {
+  background: $color-blue-dark;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+.About a,
+.About a:visited {
+  color: #fff;
+}
+.About a:hover,
+.About a:focus {
+  color: #11abb0;
+}
+
+.About h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.About p {
+  line-height: 30px;
+  color: #fff;
+}
+.About .ProfilePic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
   object-fit: cover;
+}
+.About .ContactDetails {
+  width: 41.66667%;
+}
+.About .Download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+.About .main-col {
+  padding-right: 5%;
+}
+.About .Download .Button {
+  margin-top: 6px;
+  background: #fff;
+  color: $color-blue-dark;
+}
+.About .Download .Button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+.About .Download .Button i {
+  margin-right: 15px;
+  font-size: 20px;
 }
