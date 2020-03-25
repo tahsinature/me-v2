@@ -10,16 +10,16 @@ class About extends Component {
     }
 
     return (
-      <section id="about">
+      <section id="about" className={classes.About}>
         <div className="row">
-          <div className={["three", "columns", classes["profile-pic-holder"]].join(" ")}>
-            <img className={["profile-pic", classes["profile-pic"]].join(" ")} src={profilepic} alt="Tim Baker Profile Pic" />
+          <div className={["three", "columns", classes.ProfilePicHolder].join(" ")}>
+            <img className={["profile-pic", classes.ProfilePic].join(" ")} src={profilepic} alt="Tim Baker Profile Pic" />
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
             <p>{bio}</p>
             <div className="row">
-              {/* <div className="columns contact-details">
+              {/* <div className={["columns", "contact-details", classes.ContactDetails].join(" ")}>
                 <h2>Contact Details</h2>
                 <p className="address">
                   <span>{name}</span>
@@ -35,9 +35,9 @@ class About extends Component {
                   <span>{email}</span>
                 </p>
               </div> */}
-              <div className="columns download">
+              <div className={["columns", "download", classes.Download].join(" ")}>
                 <p>
-                  <a href={resumeDownload} className="button">
+                  <a href={resumeDownload} className={["button", classes.Button].join(" ")}>
                     <i className="fa fa-download"></i>Download Resume
                   </a>
                 </p>

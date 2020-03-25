@@ -4,7 +4,8 @@
     "occupation": "Software Engineer",
     "description": "A passionate and pragmatic programmer with 2 years of professional experience, specializing in full-stack development using modern & robust technologies.",
     "image": "profilepic.jpg",
-    "bio": "I profetionally work with server technologies mostly. Front end development is sort of hobby. But I don't prefer to work profetionally on front end. Clean Coding, Good Practices, Following Conventions are my passion. I enjoy turning concepts into reality.",
+    "bio": "I profetionally work with server technologies mostly. Front end development is sort of hobby. But I don't prefer to work professionally on front end. Clean Coding, Good Practices, Following Conventions are my passion. I enjoy turning concepts into reality.",
+    "initialUrl": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Finitial.png?alt=media&token=73d5f9f2-0ef5-428a-81f5-4b8ecba0a47c",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "tahsinuc@gmail.com",
     "phone": "+6281290539936",
@@ -100,12 +101,90 @@
         "level": "60%"
       },
       {
-        "name": "Express.js",
+        "name": "Python",
         "level": "90%"
       },
       {
+        "name": "JavaScript / Node.js / TypeScript",
+        "level": "90%"
+      },
+      {
+        "name": "Java",
+        "level": "60%"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Express.js",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FExpress-JS.png?alt=media&token=ce196a60-63cb-4bfb-ab8a-51ab4d3dbd7d"
+      },
+      {
         "name": "Flask",
-        "level": "70%"
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fflask-logo.png?alt=media&token=629e17e7-0e02-4582-a380-fe5e25829231"
+      },
+      {
+        "name": "gRPC",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgrpc-logo.png?alt=media&token=08425718-7442-476a-8e32-053447948ccd"
+      },
+      {
+        "name": "Socket.io",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsocket-io-logo.svg?alt=media&token=8c692e6c-a53e-4054-b19c-6d99c5d1e643"
+      },
+      {
+        "name": "Google Pub/Sub",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FCloud-Pub-Sub-Logo.svg.png?alt=media&token=d50da071-269a-4f5f-ba13-f095bb8ad1a6"
+      },
+      {
+        "name": "Jest",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fjest-logo.jpg?alt=media&token=a97a9453-7782-4a0f-bde4-915274ebbff9"
+      },
+      {
+        "name": "Jesmine",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fjasmine-logo.png?alt=media&token=e6ae2173-a0b5-4c74-be00-af037aa7a23c"
+      },
+      {
+        "name": "Docker",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fdocker-logo.png?alt=media&token=531f83a7-ace5-4a31-b825-822dbc1aa6c5"
+      },
+      {
+        "name": "Sass",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsass-logo.png?alt=media&token=5302045a-468b-4ea4-8c99-421330500513"
+      },
+      {
+        "name": "Gulp",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgulp-logo.jpg?alt=media&token=516b0e41-67b7-4410-9828-23819c2b0f85"
+      },
+      {
+        "name": "Git",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgit-logo.png?alt=media&token=48901fa3-44ad-43c3-8f1f-88fa5074f7e5"
+      },
+      {
+        "name": "Sequelize",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4"
+      },
+      {
+        "name": "Redis",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredis-logo.png?alt=media&token=f39a4fde-2be6-407d-8e87-7f97e7c1c2dd"
+      },
+      {
+        "name": "Postgres",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FPostgresql_elephant.svg?alt=media&token=32805678-a9c7-440b-a53b-e2ccd738ae1e"
+      },
+      {
+        "name": "MongoDB",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FMongoDB_logo_01.png?alt=media&token=1bb52314-5e09-4e61-bd11-ce2c289f465b"
+      },
+      {
+        "name": "Node.js",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fnodejs-logo.png?alt=media&token=d7d78bef-a3d0-4edb-ab85-628cc4c0ca8c"
+      },
+      {
+        "name": "Firebase",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Ffirebase_logo.png?alt=media&token=c1230b32-e464-48f0-8d3f-b49fe600f71b"
+      },
+      {
+        "name": "Redux",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredux-logo.png?alt=media&token=2868fad7-92b8-46d3-be0c-fa1b6039b1d1"
       }
     ]
   },
