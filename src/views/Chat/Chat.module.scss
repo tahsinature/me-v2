@@ -1,0 +1,54 @@
+$green: #86bb71;
+$orange: #e38968;
+
+.Chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', Arial, sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.RecieverHeader {
+  position: relative;
+  padding: 2rem 2rem;
+  .OnlineStatusBox {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    .OnlineStatusText {
+      &.OnlineStatusText-online {
+        background-color: $green;
+      }
+      &.OnlineStatusText-offline {
+        background-color: $orange;
+      }
+      padding: 0.2rem 0.5rem;
+      border-radius: 10px;
+      margin-right: 0.5rem;
+    }
+    .OnlineStatusTextHelp {
+      color: gray;
+      font-size: 0.8em;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+  }
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+.ConversationContainer {
+  height: 0;
+  flex-grow: 1;
+}
