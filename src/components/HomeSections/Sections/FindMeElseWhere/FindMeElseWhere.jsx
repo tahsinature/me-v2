@@ -5,7 +5,7 @@ import GotoChatButton from '../../../Buttons/GotoChatButton/GotoChatButton';
 import NpxTahsin from '../../../../components/NpxTahsin/NpxTahsin';
 import Toy from '../../../../components/Fun/GravityPoints/GravityPoints';
 
-const FindMeElseWhere = (props) => {
+const FindMeElseWhere = props => {
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir tracked ttu bb-l tc">Find Me Elsewhere</h2>
@@ -41,9 +41,15 @@ const FindMeElseWhere = (props) => {
           </a>
         </li>
         <li>
-          On NPM:{' '}
+          On npm:{' '}
           <a className="fw6 green no-underline underline-hover" href="https://www.npmjs.com/~tahsin">
             @tahsin
+          </a>
+        </li>
+        <li>
+          On PyPI:{' '}
+          <a className="fw6 green no-underline underline-hover" href="https://pypi.org/user/tahsinature">
+            @tahsinature
           </a>
         </li>
         <li>
