@@ -41,6 +41,12 @@ const FindMeElseWhere = props => {
           </a>
         </li>
         <li>
+          On Telegram:{' '}
+          <a className="fw6 green no-underline underline-hover" href="https://t.me/t4h51n">
+            @t4h51n
+          </a>
+        </li>
+        <li>
           On npm:{' '}
           <a className="fw6 green no-underline underline-hover" href="https://www.npmjs.com/~tahsin">
             @tahsin
