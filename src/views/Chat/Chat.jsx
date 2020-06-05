@@ -30,7 +30,7 @@ const Chat = props => {
       <Header className={classes.RecieverHeader}>
         <h4>Mohammad Tahsin</h4>
         {getOnLineStatusComponent()}
-        <img src="https://i.picsum.photos/id/2/536/355.jpg" alt="receiver" className={[classes.AvatarTahsin, 'br-100 pa1 ba b--black-10'].join(' ')} />
+        <img src="https://i.picsum.photos/id/1/536/355.jpg" alt="receiver" className={[classes.AvatarTahsin, 'br-100 pa1 ba b--black-10'].join(' ')} />
       </Header>
       <div className={classes.ConversationContainer}>
         <Conversation />

@@ -1,11 +1,10 @@
-import React from 'react';
+import React, {createRef, useEffect} from 'react';
 import styled from 'styled-components';
-// import {  } from "react-bell-chat";
 
 import classes from './Conversation.module.scss';
 import Message from './Message/Message';
 
-import colors from '../../../constants/colors';
+// import colors from '../../../constants/colors';
 
 const conv = [
   {
@@ -101,19 +100,25 @@ const Root = styled.div`
 `;
 
 const Conversation = props => {
+  const ulContainer = createRef();
+  useEffect(() => {
+    ulContainer.current.scroll(0, ulContainer.current.scrollHeight);
+  });
+
   return (
     <Root className={classes.Conversation}>
-      <div className={classes['chat-history']}>
+      <div ref={ulContainer} className={classes['chat-history']}>
         <ul className={classes.MessageHolder}>
           {conv.map(msg => (
             <Message msg={msg} key={msg.id} />
           ))}
-          {/* <Message /> */}
+          {/* <Message />
           <li className={'clearfix'}>
             <i className={['fa', 'fa-circle', classes['online']].join(' ')}></i>
             <i className={['fa', 'fa-circle', classes['online']].join(' ')} style={{color: '#AED2A6'}}></i>
             <i className={['fa', 'fa-circle', classes['online']].join(' ')} style={{color: '#DAE9DA'}}></i>
-          </li>
+          </li>{' '}
+          */}
         </ul>
       </div>
 
