@@ -39,6 +39,6 @@ function App(props) {
   );
 }
 
-const mapStateToProps = (state) => ({appState: state.appReducer});
+const mapStateToProps = state => ({appState: state.appReducer});
 
 export default connect(mapStateToProps, null)(App);
