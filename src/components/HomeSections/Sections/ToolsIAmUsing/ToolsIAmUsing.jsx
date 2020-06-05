@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ToolsIAmUsing = (props) => {
+const ToolsIAmUsing = props => {
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir ttu tracked bb-l tc">Tools I'm using nowadays</h2>
@@ -22,6 +22,12 @@ const ToolsIAmUsing = (props) => {
             Docker
           </a>
           : a why i use docker
+        </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            Kubernetes
+          </a>
+          : a why and how i use kubernetes
         </li>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
