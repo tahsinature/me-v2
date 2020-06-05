@@ -8,11 +8,16 @@ $orange: #e38968;
   font-family: 'Lato', Arial, sans-serif;
   border-radius: 5px;
   overflow: hidden;
+  border: 1px solid;
 }
 
 .RecieverHeader {
   position: relative;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
+  .AvatarTahsin {
+    height: 5rem;
+    width: 5rem;
+  }
   .OnlineStatusBox {
     font-size: 0.8rem;
     display: flex;

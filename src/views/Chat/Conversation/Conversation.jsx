@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import {  } from "react-bell-chat";
 
 import classes from './Conversation.module.scss';
 import Message from './Message/Message';
@@ -94,16 +95,17 @@ const conv = [
 ];
 
 const Root = styled.div`
-  background-color: ${(props) => colors.theme[props.theme.mode].CHAT_conversation__backgroundColor};
-  /* color: ${(props) => colors.theme[props.theme.mode].CHAT_header__textColor}; */
+  ${classes['chat-history']} {
+    border-color: red;
+  }
 `;
 
-const Conversation = (props) => {
+const Conversation = props => {
   return (
     <Root className={classes.Conversation}>
       <div className={classes['chat-history']}>
         <ul className={classes.MessageHolder}>
-          {conv.map((msg) => (
+          {conv.map(msg => (
             <Message msg={msg} key={msg.id} />
           ))}
           {/* <Message /> */}

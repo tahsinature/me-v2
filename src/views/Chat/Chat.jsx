@@ -6,7 +6,7 @@ import Conversation from './Conversation/Conversation';
 
 import colors from '../../constants/colors';
 
-const getOnLineStatusComponent = (isOnline) => {
+const getOnLineStatusComponent = isOnline => {
   return (
     <div className={classes.OnlineStatusBox}>
       <p className={[classes.OnlineStatusText, classes[isOnline ? 'OnlineStatusText-online' : 'OnlineStatusText-offline']].join(' ')}>{isOnline ? 'Online' : 'Offline'}</p>
@@ -15,25 +15,27 @@ const getOnLineStatusComponent = (isOnline) => {
   );
 };
 
-const Header = styled.div`
-  background-color: ${(props) => colors.theme[props.theme.mode].CHAT_header__backgroundColor};
-  color: ${(props) => colors.theme[props.theme.mode].CHAT_header__textColor};
+const Root = styled.div`
+  border-color: ${props => colors.theme[props.theme.mode].CHAT_border_color};
 `;
 
-const Chat = (props) => {
+const Header = styled.div`
+  background-color: ${props => colors.theme[props.theme.mode].CHAT_header__backgroundColor};
+  color: ${props => colors.theme[props.theme.mode].CHAT_header__textColor};
+`;
+
+const Chat = props => {
   return (
-    <>
-      <div className={classes.Chat}>
-        <Header className={classes.RecieverHeader}>
-          <h4>Mohammad Tahsin</h4>
-          {getOnLineStatusComponent()}
-          <img src="https://i.picsum.photos/id/2/536/354.jpg" alt="receiver" className="br-100 pa1 ba b--black-10 h3 w3" />
-        </Header>
-        <div className={classes.ConversationContainer}>
-          <Conversation />
-        </div>
+    <Root className={classes.Chat}>
+      <Header className={classes.RecieverHeader}>
+        <h4>Mohammad Tahsin</h4>
+        {getOnLineStatusComponent()}
+        <img src="https://i.picsum.photos/id/2/536/354.jpg" alt="receiver" className={[classes.AvatarTahsin, 'br-100 pa1 ba b--black-10'].join(' ')} />
+      </Header>
+      <div className={classes.ConversationContainer}>
+        <Conversation />
       </div>
-    </>
+    </Root>
   );
 };
 
