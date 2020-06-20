@@ -1,8 +1,10 @@
 import React, {createRef, useEffect} from 'react';
 import styled from 'styled-components';
+import SendIcon from '@material-ui/icons/Send';
 
 import classes from './Conversation.module.scss';
 import Message from './Message/Message';
+import colors from '../../../constants/colors';
 
 // import colors from '../../../constants/colors';
 
@@ -93,10 +95,17 @@ const conv = [
   },
 ];
 
-const Root = styled.div`
-  ${classes['chat-history']} {
-    border-color: red;
-  }
+const Root = styled.div``;
+const ChatHistory = styled.div`
+  border-bottom: 1px solid ${props => colors.theme[props.theme.mode].CHAT_border_color};
+`;
+const TextArea = styled.textarea`
+  background-color: ${props => colors.theme[props.theme.mode].CHAT_textarea_backgroundColor};
+  color: ${props => colors.theme[props.theme.mode].CHAT_textarea_textColor};
+`;
+
+const SendButton = styled.button`
+  /* background-color: red; */
 `;
 
 const Conversation = props => {
@@ -107,7 +116,7 @@ const Conversation = props => {
 
   return (
     <Root className={classes.Conversation}>
-      <div ref={ulContainer} className={classes['chat-history']}>
+      <ChatHistory ref={ulContainer} className={classes['chat-history']}>
         <ul className={classes.MessageHolder}>
           {conv.map(msg => (
             <Message msg={msg} key={msg.id} />
@@ -120,13 +129,15 @@ const Conversation = props => {
           </li>{' '}
           */}
         </ul>
-      </div>
+      </ChatHistory>
 
       <div className={[classes['chat-message'], classes['Clearfix']].join(' ')}>
-        <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
+        <TextArea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></TextArea>
         <i className={['fa', 'fa-file-o', classes.UploadFileIcon].join(' ')}></i> &nbsp;&nbsp;&nbsp;
         <i className={['fa', 'fa-file-image-o', classes.UploadImageIcon].join(' ')}></i>
-        <button>Send</button>
+        <SendButton>
+          <SendIcon />
+        </SendButton>
       </div>
     </Root>
   );

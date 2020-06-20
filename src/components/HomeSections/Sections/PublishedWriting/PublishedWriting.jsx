@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PublishedWriting = (props) => {
+const PublishedWriting = props => {
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir tracked ttu bb-l tc">Published Writing</h2>
@@ -21,6 +21,11 @@ const PublishedWriting = (props) => {
           Write about react native shake alternative{' '}
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Link will be added
+          </a>
+        </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            Read More...
           </a>
         </li>
       </ul>

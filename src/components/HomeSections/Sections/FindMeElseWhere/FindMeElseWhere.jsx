@@ -65,6 +65,12 @@ const FindMeElseWhere = props => {
           </a>
         </li>
         <li>
+          On Gitlab:{' '}
+          <a className="fw6 green no-underline underline-hover" href="https://gitlab.com/tahsinature">
+            @tahsinature
+          </a>
+        </li>
+        <li>
           On Medium:{' '}
           <a className="fw6 green no-underline underline-hover" href="https://medium.com/@tahsinature">
             @tahsinature

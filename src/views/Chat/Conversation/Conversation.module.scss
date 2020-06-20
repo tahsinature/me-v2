@@ -16,7 +16,6 @@ $gray: #92959e;
 
   .chat-history {
     padding: 30px 30px 20px;
-    border-bottom: 2px solid;
     overflow-y: scroll;
     height: 100%;
     .MessageHolder {
@@ -30,10 +29,12 @@ $gray: #92959e;
       width: 100%;
       border: none;
       padding: 10px 20px;
-      font-size: 14px/22px;
       margin-bottom: 10px;
       border-radius: 5px;
       resize: none;
+      &:focus {
+        outline: none;
+      }
     }
 
     .UploadFileIcon,
@@ -51,7 +52,7 @@ $gray: #92959e;
       border: none;
       cursor: pointer;
       font-weight: bold;
-      background: #f2f5f8;
+      background: transparent;
 
       &:hover {
         color: darken($blue, 7%);

@@ -22,6 +22,7 @@ const Root = styled.div`
 const Header = styled.div`
   background-color: ${props => colors.theme[props.theme.mode].CHAT_header__backgroundColor};
   color: ${props => colors.theme[props.theme.mode].CHAT_header__textColor};
+  border-color: ${props => colors.theme[props.theme.mode].CHAT_border_color};
 `;
 
 const Chat = props => {
