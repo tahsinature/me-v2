@@ -41,6 +41,12 @@ const ToolsIAmUsing = props => {
           </a>
           : Redux for state management
         </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            SonarQube
+          </a>
+          : For maintaining good practices and reducing code smells. Read more details here.
+        </li>
       </ul>
     </section>
   );
