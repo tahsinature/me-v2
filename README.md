@@ -1,7 +1,9 @@
 ## temp command (run like from your host machine)
 
 ```bash
-docker run -v ~/Workstation/personal/me/src:/app/src -v ~/Workstation/personal/me/public:/app/public --rm -it -p 3000:3000 . sh
+docker build -t me-v2 .
+docker run -v ~/Workstation/personal/me/src:/app/src -v ~/Workstation/personal/me/public:/app/public --rm -it -p 3000:3000 me-v2 sh
+npm start
 ```
 
 <!-- ### before work
