@@ -1,3 +1,4 @@
+# need to fix
 FROM node:12-alpine
 
 RUN mkdir /app /app/src /app/public

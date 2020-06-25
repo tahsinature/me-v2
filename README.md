@@ -1,1 +1,21 @@
-My Readme
+## temp command (run like from your host machine)
+
+```bash
+docker run -v ~/Workstation/personal/me/src:/app/src -v ~/Workstation/personal/me/public:/app/public --rm -it -p 3000:3000 . sh
+```
+
+<!-- ### before work
+
+```bash
+docker-compose up
+```
+
+<br />
+<br />
+<br />
+
+### after work
+
+```bash
+docker-compose down
+``` -->
