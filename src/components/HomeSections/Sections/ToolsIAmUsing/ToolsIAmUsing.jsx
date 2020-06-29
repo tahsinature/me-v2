@@ -9,43 +9,49 @@ const ToolsIAmUsing = props => {
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             gRPC
           </a>
-          : a why i use grpc with protocol buffer
+          : I like gRPC transport mechanism for request/response as non-persistent streaming protocol.
         </li>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
-            socket.io
+            Socket.IO
           </a>
-          : a why i use socket.io
+          : I am using Socket.IO for bi-directional communication for quite a long now.
+        </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            FCM
+          </a>
+          : Using Firebase Cloud Messaging (FCM) since 2019, as it's powered by Google, feels pretty consistant and reliable.
         </li>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Docker
           </a>
-          : a why i use docker
+          : Everyday's tool. In fact if I create a new repo now, I put it on docker first.
         </li>
-        <li>
+        {/* <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Kubernetes
           </a>
-          : a why and how i use kubernetes
-        </li>
+          : It's basically for DevOps. But sometimes we as backend engineer, need to 
+        </li> */}
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Jest
           </a>
-          : previously using Jesmine now jest
+          : Previously I was using Jasmine for testing. Now using Jest for couple of years now.
         </li>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Redux
           </a>
-          : Redux for state management
+          : If I use React or React Native apps, redux will take place there for sure.
         </li>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             SonarQube
           </a>
-          : For maintaining good practices and reducing code smells. Read more details here.
+          : I use Sonar to inspect my code quality, detect bugs, code smells and security vulnerabilities. Really helps when I work in a team.
         </li>
       </ul>
     </section>
