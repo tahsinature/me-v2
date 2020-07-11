@@ -3,6 +3,7 @@ import {ThemeProvider} from 'styled-components';
 import {connect} from 'react-redux';
 import {Container} from '@material-ui/core';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Particles from 'react-particles-js';
 
 import './App.scss';
 import './assets/sass/main.scss';
@@ -15,11 +16,14 @@ import Home from './views/Home/Home';
 import Chat from './views/Chat/Chat';
 import Error404 from './views/Error404/Error404';
 
+import perticlesConfig from './perticles';
+
 function App(props) {
   const {appState} = props;
 
   return (
     <Router>
+      <Particles className={classes.Particle} width="100vw" height="100vh" params={perticlesConfig} />
       <ThemeProvider theme={{mode: appState.appTheme}}>
         <GlobalStyle />
         <Container maxWidth="md">

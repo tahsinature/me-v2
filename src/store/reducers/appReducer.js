@@ -1,7 +1,7 @@
 import actionTypes from '../../constants/actionTypes';
 
 const initialState = {
-  appTheme: 'light',
+  appTheme: 'dark',
 };
 
 export default (state = initialState, action) => {

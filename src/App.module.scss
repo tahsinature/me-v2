@@ -3,10 +3,15 @@
   flex-direction: column;
   height: 100vh;
   padding: 2rem;
+  position: relative;
 }
 
 .Content {
   flex-grow: 1;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.Particle {
+  position: fixed;
 }
