@@ -1,6 +1,9 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 
 const ToolsIAmUsing = props => {
+  const history = useHistory();
+
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir ttu tracked bb-l tc">Tools I'm using nowadays</h2>
@@ -52,6 +55,17 @@ const ToolsIAmUsing = props => {
             SonarQube
           </a>
           : I use Sonar to inspect my code quality, detect bugs, code smells and security vulnerabilities. Really helps when I work in a team.
+        </li>
+        <li>
+          <a
+            className="fw6 green no-underline underline-hover"
+            href="/tools"
+            onClick={e => {
+              e.preventDefault();
+              history.push('/tools');
+            }}>
+            See All...
+          </a>
         </li>
       </ul>
     </section>

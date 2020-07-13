@@ -1,0 +1,25 @@
+@import '../../assets/sass/media';
+
+.List {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  @include respond(mf, tab-l) {
+    grid-template-columns: 1fr 1fr;
+  }
+  li {
+    padding: 0 0.5rem;
+    .ItemTop {
+      display: flex;
+      align-items: center;
+      h4 {
+        margin: 0.5rem;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

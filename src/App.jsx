@@ -15,6 +15,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './views/Home/Home';
 import Chat from './views/Chat/Chat';
 import Error404 from './views/Error404/Error404';
+import Tools from './views/Tools/Tools';
 
 import perticlesConfig from './perticles';
 
@@ -33,6 +34,7 @@ function App(props) {
               <Switch>
                 <Route exact path="/" component={() => <Home />} />
                 <Route path="/chat" component={() => <Chat />} />
+                <Route path="/tools" component={() => <Tools />} />
                 <Route component={() => <Error404 />} />
               </Switch>
             </div>
