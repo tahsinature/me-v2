@@ -5,9 +5,9 @@ import classes from './Tools.module.scss';
 
 const data = [
   {
-    title: 'Lorem, ipsum dolor.',
+    title: 'gRPC',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam iste, esse aut pariatur sit.',
-    image: 'https://pbs.twimg.com/profile_images/1224335491899760641/h404B5dU_400x400.jpg',
+    image: 'https://s.appbrain.com/static/202003041452037/blob/sdk-logos/grpc.png',
   },
   {
     title: 'Lorem, ipsum dolor.2',
@@ -38,7 +38,7 @@ const getLi = item => (
 
 const Tools = props => {
   return (
-    <div className={classes.Error404}>
+    <div>
       <h1>Tools</h1>
       <ul className={classes.List}>{data.map(ele => getLi(ele))}</ul>
     </div>
