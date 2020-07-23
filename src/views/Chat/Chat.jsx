@@ -1,10 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import classes from './Chat.module.scss';
 import Conversation from './Conversation/Conversation';
-
-import colors from '../../constants/colors';
+import { Root, Header } from './Chat.theme';
 
 const getOnLineStatusComponent = isOnline => {
   return (
@@ -15,23 +13,13 @@ const getOnLineStatusComponent = isOnline => {
   );
 };
 
-const Root = styled.div`
-  border-color: ${props => colors.theme[props.theme.mode].CHAT_border_color};
-`;
-
-const Header = styled.div`
-  background-color: ${props => colors.theme[props.theme.mode].CHAT_header__backgroundColor};
-  color: ${props => colors.theme[props.theme.mode].CHAT_header__textColor};
-  border-color: ${props => colors.theme[props.theme.mode].CHAT_border_color};
-`;
-
 const Chat = props => {
   return (
     <Root className={classes.Chat}>
       <Header className={classes.RecieverHeader}>
         <h4>Mohammad Tahsin</h4>
         {getOnLineStatusComponent()}
-        <img src="https://i.picsum.photos/id/1/536/355.jpg" alt="receiver" className={[classes.AvatarTahsin, 'br-100 pa1 ba b--black-10'].join(' ')} />
+        <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/7_avatar-512.png" alt="receiver" className={[classes.AvatarTahsin, 'br-100 pa1 ba b--black-10'].join(' ')} />
       </Header>
       <div className={classes.ConversationContainer}>
         <Conversation />

@@ -5,10 +5,10 @@ import {Provider} from 'react-redux';
 import App from './App.jsx';
 
 import * as serviceWorker from './serviceWorker';
-import configureStore from './store/configureStore.js';
+import store from './store';
 
 ReactDOM.render(
-  <Provider store={configureStore()}>
+  <Provider store={store}>
     <React.StrictMode>
       <App />
     </React.StrictMode>

@@ -1,10 +1,9 @@
-import React, {createRef, useEffect} from 'react';
-import styled from 'styled-components';
+import React, { createRef, useEffect } from 'react';
 import SendIcon from '@material-ui/icons/Send';
 
 import classes from './Conversation.module.scss';
 import Message from './Message/Message';
-import colors from '../../../constants/colors';
+import { Root, ChatHistory, TextArea } from './Conversation.theme';
 
 // import colors from '../../../constants/colors';
 
@@ -95,19 +94,6 @@ const conv = [
   },
 ];
 
-const Root = styled.div``;
-const ChatHistory = styled.div`
-  border-bottom: 1px solid ${props => colors.theme[props.theme.mode].CHAT_border_color};
-`;
-const TextArea = styled.textarea`
-  background-color: ${props => colors.theme[props.theme.mode].CHAT_textarea_backgroundColor};
-  color: ${props => colors.theme[props.theme.mode].CHAT_textarea_textColor};
-`;
-
-const SendButton = styled.button`
-  /* background-color: red; */
-`;
-
 const Conversation = props => {
   const ulContainer = createRef();
   useEffect(() => {
@@ -135,9 +121,9 @@ const Conversation = props => {
         <TextArea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></TextArea>
         <i className={['fa', 'fa-file-o', classes.UploadFileIcon].join(' ')}></i> &nbsp;&nbsp;&nbsp;
         <i className={['fa', 'fa-file-image-o', classes.UploadImageIcon].join(' ')}></i>
-        <SendButton>
+        <button>
           <SendIcon />
-        </SendButton>
+        </button>
       </div>
     </Root>
   );

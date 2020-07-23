@@ -1,8 +1,20 @@
 import {createGlobalStyle} from 'styled-components';
+import {getCurrentTheme} from './store/';
+
+const GlobalStyleCSS = {
+  dark: {
+    'background-color': '#111',
+    color: '#eee',
+  },
+  light: {
+    'background-color': '#fff',
+    color: '#111',
+  },
+};
 
 export const GlobalStyle = createGlobalStyle`
 body {
-  background-color: ${(props) => (props.theme.mode === 'dark' ? '#111' : '#fff')};
-  color: ${(props) => (props.theme.mode === 'dark' ? '#eee' : '#111')};
+  background-color: ${() => GlobalStyleCSS[getCurrentTheme()]['background-color']};
+  color: ${() => GlobalStyleCSS[getCurrentTheme()]['color']};
 }
 `;
