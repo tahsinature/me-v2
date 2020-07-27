@@ -1,5 +1,5 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const ToolsIAmUsing = props => {
   const history = useHistory();
@@ -55,6 +55,12 @@ const ToolsIAmUsing = props => {
             SonarQube
           </a>
           : I use Sonar to inspect my code quality, detect bugs, code smells and security vulnerabilities. Really helps when I work in a team.
+        </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            HashiCorp Vault
+          </a>
+          : It's a single source of truth to manage credentials. I use it for storing application API keys, passwords, certificates and other sensitive data.
         </li>
         <li>
           <a
