@@ -4,7 +4,7 @@ import FewWordsAboutMe from './Sections/FewWordsAboutMe/FewWordsAboutMe';
 import ToolsIAmUsing from './Sections/ToolsIAmUsing/ToolsIAmUsing';
 import FrameworksAndLibraries from './Sections/FrameworksAndLibraries/FrameworksAndLibraries';
 import ProgrammingLanguages from './Sections/ProgrammingLanguages/ProgrammingLanguages';
-import PersonalProjects from './Sections/PersonalProjects/PersonalProjects';
+import MyContributions from './Sections/MyContributions/MyContributions';
 import PublishedWriting from './Sections/PublishedWriting/PublishedWriting';
 // import PublicSpeaking from './Sections/PublicSpeaking/PublicSpeaking';
 // import EventsIAmAt from './Sections/EventsIAmAt/EventsIAmAt';
@@ -19,7 +19,7 @@ const HomeSections = props => {
       <ToolsIAmUsing />
       <FrameworksAndLibraries />
       <ProgrammingLanguages />
-      <PersonalProjects />
+      <MyContributions />
       <PublishedWriting />
       {/* <PublicSpeaking /> */}
       {/* <EventsIAmAt /> */}

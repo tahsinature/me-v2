@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './PersonalProjects.module.scss';
+import classes from './MyContributions.module.scss';
 
 const PersonalProjects = props => {
   return (
-    <section className={[classes.PersonalProjects, 'f4 lh-copy'].join(' ')}>
-      <h2 className="f2 avenir ttu tracked bb-l tc">Personal Projects</h2>
+    <section className={[classes.MyContributions, 'f4 lh-copy'].join(' ')}>
+      <h2 className="f2 avenir ttu tracked bb-l tc">My Contributions</h2>
       <ul>
         <li>
           <a className="fw6 green no-underline underline-hover" href="https://www.npmjs.com/package/sequelize-utility">
