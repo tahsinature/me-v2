@@ -15,7 +15,7 @@ const getLiElement = item => (
 );
 
 const Tools = props => {
-  const { listTitle, data } = props;
+  const { listTitle, data = [] } = props;
   return (
     <div>
       <h1 className={classes.ListTitle}>{listTitle || 'List'}</h1>

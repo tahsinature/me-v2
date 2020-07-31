@@ -1,5 +1,7 @@
 export default {
   appReducer: {
     TOGGLE_THEME: 'TOGGLE_THEME',
+    START_PAGE_REQ_FETCH: 'START_PAGE_REQ_FETCH',
+    STOP_PAGE_REQ_FETCH: 'STOP_PAGE_REQ_FETCH',
   },
 };

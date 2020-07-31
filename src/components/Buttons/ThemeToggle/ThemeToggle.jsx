@@ -1,11 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import classes from './ThemeToggle.module.scss';
 import actionTypes from '../../../constants/actionTypes';
-import {connect} from 'react-redux';
 
-const ThemeToggle = (props) => {
-  const {appState, toggleTheme} = props;
+const ThemeToggle = props => {
+  const { appState, toggleTheme } = props;
 
   const currentBtnClass = appState.appTheme === 'dark' ? classes.dawn : classes.dusk;
 
@@ -29,9 +29,9 @@ const ThemeToggle = (props) => {
   );
 };
 
-const mapStateToProps = (state) => ({appState: state.appReducer});
-const mapDispatchToProps = (dispatch) => ({
-  toggleTheme: () => dispatch({type: actionTypes.appReducer.TOGGLE_THEME}),
+const mapStateToProps = state => ({ appState: state.appReducer });
+const mapDispatchToProps = dispatch => ({
+  toggleTheme: () => dispatch({ type: actionTypes.appReducer.TOGGLE_THEME }),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ThemeToggle);

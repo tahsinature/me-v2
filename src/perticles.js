@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-import {IParticlesParams} from 'react-particles-js';
+import { IParticlesParams } from 'react-particles-js';
+import colors from './constants/colors';
 
 /**
  *
@@ -15,7 +16,7 @@ const perticlesConfig = {
       },
     },
     color: {
-      value: '#19a974',
+      value: colors.primaryGreenishColor,
     },
     shape: {
       type: 'circle',
