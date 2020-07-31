@@ -6,6 +6,7 @@ const data = [
     title: 'gRPC',
     description: 'I like gRPC transport mechanism for request/response as non-persistent streaming protocol.',
     image: 'https://s.appbrain.com/static/202003041452037/blob/sdk-logos/grpc.png',
+    display: true,
   },
   {
     title: 'Socket.IO',
@@ -21,6 +22,7 @@ const data = [
     title: 'Docker',
     description: `Everyday's tool. In fact if I create a new repo now, I put it on docker first.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fdocker-logo.png?alt=media&token=531f83a7-ace5-4a31-b825-822dbc1aa6c5`,
+    display: true,
   },
   // {
   //   title: 'Kubernetes',
@@ -31,6 +33,7 @@ const data = [
     title: 'Jest',
     description: `Previously I was using Jasmine for testing. Now using Jest for couple of years now.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fjest-logo.jpg?alt=media&token=a97a9453-7782-4a0f-bde4-915274ebbff9`,
+    display: true,
   },
   {
     title: 'Redux',
@@ -41,29 +44,34 @@ const data = [
     title: 'SonarQube',
     description: `I use Sonar to inspect my code quality, detect bugs, code smells and security vulnerabilities. Really helps when I work in a team.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsonarqube-logo.png?alt=media&token=c75b584c-77d4-4341-8c5b-71616300830d`,
+    display: true,
   },
   {
     title: 'HashiCorp Vault',
     description: `It's a single source of truth to manage credentials. I use it for storing application API keys, passwords, certificates and other sensitive data.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fhashicorp-vault-logo.png?alt=media&token=950f4c59-a5b0-4eaf-8b1b-683c8889e4c4`,
+    display: true,
   },
 ];
 
-const ToolsIAmUsing = props => {
+const ToolsIAmUsing = () => {
   const history = useHistory();
 
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir ttu tracked bb-l tc">Tools I'm using nowadays</h2>
       <ul>
-        {data.map(ele => (
-          <li key={ele.title}>
-            <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
-              {ele.title}
-            </a>
-            : {ele.description}
-          </li>
-        ))}
+        {data.map(
+          ele =>
+            ele.display && (
+              <li key={ele.title}>
+                <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+                  {ele.title}
+                </a>
+                : {ele.description}
+              </li>
+            ),
+        )}
         <li>
           <a
             className="fw6 green no-underline underline-hover"
