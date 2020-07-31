@@ -1,1 +1,3 @@
-export default {};
+export default {
+  primaryGreenishColor: '#19a974',
+};

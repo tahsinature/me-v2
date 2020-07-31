@@ -11,6 +11,7 @@ import classes from './App.module.scss';
 import { GlobalStyle } from './App.theme';
 
 import NavBar from './components/NavBar/NavBar';
+import PageLoader from './components/PageLoader/PageLoader';
 
 import Home from './views/Home/Home';
 import Chat from './views/Chat/Chat';
@@ -27,19 +28,23 @@ function App(props) {
       <Particles className={classes.Particle} width="100vw" height="100vh" params={perticlesConfig} />
       <ThemeProvider theme={{ mode: appState.appTheme }}>
         <GlobalStyle />
-        <Container maxWidth="md">
-          <div className={['App', classes.App].join(' ')}>
-            <NavBar />
-            <div className={classes.Content}>
-              <Switch>
-                <Route exact path="/" component={() => <Home />} />
-                <Route path="/chat" component={() => <Chat />} />
-                <Route path="/list" component={({ location }) => <List {...location.state} />} />
-                <Route component={() => <Error404 />} />
-              </Switch>
+        {appState.isPageLoading ? (
+          <PageLoader />
+        ) : (
+          <Container maxWidth="md">
+            <div className={['App', classes.App].join(' ')}>
+              <NavBar />
+              <div className={classes.Content}>
+                <Switch>
+                  <Route exact path="/" component={() => <Home />} />
+                  <Route path="/chat" component={() => <Chat />} />
+                  <Route path="/list" component={({ location }) => <List {...location.state} />} />
+                  <Route component={() => <Error404 />} />
+                </Switch>
+              </div>
             </div>
-          </div>
-        </Container>
+          </Container>
+        )}
       </ThemeProvider>
     </Router>
   );

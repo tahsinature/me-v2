@@ -1,11 +1,20 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { connect } from 'react-redux';
+import actionTypes from '../../../../constants/actionTypes';
+import faker from 'faker';
 
 const data = [
   {
     title: 'gRPC',
-    description: 'I like gRPC transport mechanism for request/response as non-persistent streaming protocol.',
-    image: 'https://s.appbrain.com/static/202003041452037/blob/sdk-logos/grpc.png',
+    description: `I like gRPC transport mechanism for request/response as non-persistent streaming protocol.`,
+    image: `https://s.appbrain.com/static/202003041452037/blob/sdk-logos/grpc.png`,
+    display: true,
+  },
+  {
+    title: 'Google Cloud Pub/Sub',
+    description: `GC Pub/Sub became my favt tool for event driven architecture and a good alternative to Kafka as it is backed by Google and because of it's less complexity`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgoogle-pub-sub.png?alt=media&token=114864ba-6c9f-4ee4-bb33-305049f5cb32`,
     display: true,
   },
   {
@@ -36,9 +45,59 @@ const data = [
     display: true,
   },
   {
+    title: 'Jasmine',
+    description: `Before I started to use Jest, I was using Jesmine continuously as a testing framework for JavaScript`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fjasmine-logo.png?alt=media&token=e6ae2173-a0b5-4c74-be00-af037aa7a23c`,
+  },
+  {
     title: 'Redux',
     description: `If I use React or React Native apps, redux will take place there for sure.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredux-logo.png?alt=media&token=2868fad7-92b8-46d3-be0c-fa1b6039b1d1`,
+  },
+  {
+    title: 'Sass',
+    description: `Whenever I say I am writting CSS, it means I am writting Sass. I mean literally`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsass-logo.png?alt=media&token=5302045a-468b-4ea4-8c99-421330500513`,
+  },
+  {
+    title: 'Gulp',
+    description: `I use gulp mostly when I don't use a framework. Great tool as a task-runner`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgulp-logo.jpg?alt=media&token=516b0e41-67b7-4410-9828-23819c2b0f85`,
+  },
+  {
+    title: 'Git',
+    description: `Of course you can say, "Every minute I use Git on GitHub and GitLab". Literally.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgit-logo.png?alt=media&token=48901fa3-44ad-43c3-8f1f-88fa5074f7e5`,
+  },
+  {
+    title: 'Sequelize',
+    description: `I use Sequelize as ORM for relational databases (Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server) when I work with Node.js application.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4`,
+  },
+  {
+    title: 'Mongoose',
+    description: `I use Mongoose as ORM for MongoDB when I work with Node.js application.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4`,
+  },
+  {
+    title: 'Redis',
+    description: `I've been using Redis for caching & scheduling. I love it for those purposes.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredis-logo.png?alt=media&token=f39a4fde-2be6-407d-8e87-7f97e7c1c2dd`,
+  },
+  {
+    title: 'Postgres',
+    description: `My first choice for relational databases.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FPostgresql_elephant.svg?alt=media&token=32805678-a9c7-440b-a53b-e2ccd738ae1e`,
+  },
+  {
+    title: 'MongoDB',
+    description: `For my most of the work, I try to use MongoDB when it fits.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FMongoDB_logo_01.png?alt=media&token=1bb52314-5e09-4e61-bd11-ce2c289f465b`,
+  },
+  {
+    title: 'Firebase',
+    description: `I love this platform. I feel so comfortable and confident as it's backed by Google`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Ffirebase_logo.png?alt=media&token=c1230b32-e464-48f0-8d3f-b49fe600f71b`,
   },
   {
     title: 'SonarQube',
@@ -54,9 +113,8 @@ const data = [
   },
 ];
 
-const ToolsIAmUsing = () => {
+const ToolsIAmUsing = props => {
   const history = useHistory();
-
   return (
     <section className="f4 lh-copy">
       <h2 className="f2 avenir ttu tracked bb-l tc">Tools I'm using nowadays</h2>
@@ -78,7 +136,11 @@ const ToolsIAmUsing = () => {
             href="/tools"
             onClick={e => {
               e.preventDefault();
-              history.push('/list/tools', { data, listTitle: `List of tools I've been using` });
+              props.startLoadData();
+              setTimeout(() => {
+                props.stopLoadData();
+                history.push('/list/tools', { data, listTitle: `List of tools I've been using` });
+              }, faker.random.number({ min: 500, max: 2000 }));
             }}>
             See All...
           </a>
@@ -88,4 +150,9 @@ const ToolsIAmUsing = () => {
   );
 };
 
-export default ToolsIAmUsing;
+const mapDispatchToProps = dispatch => ({
+  startLoadData: () => dispatch({ type: actionTypes.appReducer.START_PAGE_REQ_FETCH }),
+  stopLoadData: () => dispatch({ type: actionTypes.appReducer.STOP_PAGE_REQ_FETCH }),
+});
+
+export default connect(null, mapDispatchToProps)(ToolsIAmUsing);
