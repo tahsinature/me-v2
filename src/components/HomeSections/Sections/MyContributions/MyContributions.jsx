@@ -36,6 +36,12 @@ const PersonalProjects = props => {
           </a>
           : At the initial stage of COVID-19 pandemic, it was little bit tough to see the stat of the pendemic. I created an Android & iOS app to observe the stat conveniently.
         </li>
+        <li>
+          <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
+            easyport
+          </a>
+          : During software development, lots of time we face issues related to processes and ports. I created this binary to eliminate those issues with ease.
+        </li>
       </ul>
     </section>
   );
