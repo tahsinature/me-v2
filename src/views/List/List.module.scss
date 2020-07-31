@@ -1,5 +1,10 @@
 @import '../../assets/sass/media';
 
+.ListTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .List {
   display: grid;
   grid-template-columns: 1fr;
