@@ -16,17 +16,19 @@ const GlobalStyleCss = {
 };
 
 export const GlobalStyle = createGlobalStyle`
-  .rce-mbox {
-    background-color : ${props => GlobalStyleCss[props.theme.mode]['chat-single-msg-bg-color']};
-  }
-
-  .rce-mbox-right-notch, .rce-mbox-left-notch {
-    fill: ${props => GlobalStyleCss[props.theme.mode]['chat-single-msg-bg-color']};
-  }
-
-  .${classes.Bottom} input {
-    background-color: ${props => GlobalStyleCss[props.theme.mode]['input-bg-color']};
-    color: ${props => GlobalStyleCss[props.theme.mode]['input-text-color']};
+  .${classes.Chat} {
+    .rce-mbox {
+      background-color : ${props => GlobalStyleCss[props.theme.mode]['chat-single-msg-bg-color']};
+    }
+  
+    .rce-mbox-right-notch, .rce-mbox-left-notch {
+      fill: ${props => GlobalStyleCss[props.theme.mode]['chat-single-msg-bg-color']};
+    }
+  
+    .${classes.Bottom} input {
+      background-color: ${props => GlobalStyleCss[props.theme.mode]['input-bg-color']};
+      color: ${props => GlobalStyleCss[props.theme.mode]['input-text-color']};
+    }
   }
 `;
 
