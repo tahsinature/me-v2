@@ -14,7 +14,7 @@ import NavBar from './components/NavBar/NavBar';
 import PageLoader from './components/PageLoader/PageLoader';
 
 import Home from './views/Home/Home';
-import Chat from './views/Chat/Chat';
+// import Chat from './views/Chat/Chat';
 import List from './views/List/List';
 import Error404 from './views/Error404/Error404';
 import UnderDevelopment from './views/UnderDevelopment/UnderDevelopment';
