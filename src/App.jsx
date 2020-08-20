@@ -14,9 +14,10 @@ import NavBar from './components/NavBar/NavBar';
 import PageLoader from './components/PageLoader/PageLoader';
 
 import Home from './views/Home/Home';
-import Chat from './views/Chat/Chat';
-import Error404 from './views/Error404/Error404';
+// import Chat from './views/Chat/Chat';
 import List from './views/List/List';
+import Error404 from './views/Error404/Error404';
+import UnderDevelopment from './views/UnderDevelopment/UnderDevelopment';
 
 import perticlesConfig from './perticles';
 
@@ -37,7 +38,7 @@ function App(props) {
               <div className={classes.Content}>
                 <Switch>
                   <Route exact path="/" component={() => <Home />} />
-                  <Route path="/chat" component={() => <Chat />} />
+                  <Route path="/chat" component={() => <UnderDevelopment progress={70} />} />
                   <Route path="/list" component={({ location }) => <List {...location.state} />} />
                   <Route component={() => <Error404 />} />
                 </Switch>

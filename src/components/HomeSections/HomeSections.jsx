@@ -8,6 +8,7 @@ import MyContributions from './Sections/MyContributions/MyContributions';
 import PublishedWriting from './Sections/PublishedWriting/PublishedWriting';
 // import PublicSpeaking from './Sections/PublicSpeaking/PublicSpeaking';
 // import EventsIAmAt from './Sections/EventsIAmAt/EventsIAmAt';
+import OtherActivities from './Sections/OtherActivities/OtherActivities';
 import FindMeElseWhere from './Sections/FindMeElseWhere/FindMeElseWhere';
 
 import classes from './HomeSections.module.scss';
@@ -23,6 +24,7 @@ const HomeSections = props => {
       <PublishedWriting />
       {/* <PublicSpeaking /> */}
       {/* <EventsIAmAt /> */}
+      <OtherActivities />
       <FindMeElseWhere />
     </div>
   );
