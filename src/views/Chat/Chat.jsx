@@ -1,5 +1,5 @@
-import React from 'react';
-import { MessageBox, MessageList, Input, Button } from 'react-chat-elements';
+import React, { useEffect, useState } from 'react';
+import { MessageList, Input, Button } from 'react-chat-elements';
 import 'react-chat-elements/dist/main.css';
 import _ from 'lodash';
 
@@ -10,6 +10,33 @@ import { Root, GlobalStyle } from './Chat.theme';
 import faker from 'faker';
 
 const Chat = props => {
+  const [msgs, addNewMsg] = useState(
+    Array.from({ length: 50 }, () => {
+      return {
+        position: _.sample(['left', 'right']),
+        type: 'text',
+        text: faker.random.words(),
+        date: Date.parse(faker.date.past()),
+      };
+    }),
+  );
+
+  useEffect(() => {
+    const list = document.querySelector(`.${classes.Middle}`);
+    const farFromBottom = list.scrollHeight - list.scrollTop - list.offsetHeight;
+    if (farFromBottom < 500) list.scroll(0, list.scrollHeight);
+
+    // setTimeout(() => {
+    //   addNewMsg(
+    //     msgs.concat({
+    //       position: _.sample(['left', 'right']),
+    //       type: 'text',
+    //       text: 'new msg',
+    //       date: Date.parse(faker.date.recent()),
+    //     }),
+    //   );
+    // }, 2000);
+  });
   return (
     <Root className={classes.Chat}>
       <GlobalStyle />
@@ -18,19 +45,7 @@ const Chat = props => {
           <p>@tahsinature</p>
         </div>
         <div className={classes.Middle}>
-          <MessageList
-            className="message-list"
-            lockable={true}
-            toBottomHeight={'100%'}
-            dataSource={Array.from({ length: 50 }, () => {
-              return {
-                position: _.sample(['left', 'right']),
-                type: 'text',
-                text: faker.random.words(),
-                date: Date.parse(faker.date.past()),
-              };
-            })}
-          />
+          <MessageList lockable={true} dataSource={msgs} />
         </div>
         <div className={classes.Bottom}>
           <Input placeholder="Type here..." rightButtons={<Button color="white" backgroundColor="black" text="Send" />} />
