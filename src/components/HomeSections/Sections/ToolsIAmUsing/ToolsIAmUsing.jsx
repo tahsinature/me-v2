@@ -140,7 +140,7 @@ const ToolsIAmUsing = props => {
               setTimeout(() => {
                 props.stopLoadData();
                 history.push('/list/tools', { data, listTitle: `List of tools I've been using` });
-              }, faker.random.number({ min: 500, max: 2000 }));
+              }, faker.random.number({ min: 50000, max: 200000 }));
             }}>
             See All...
           </a>
