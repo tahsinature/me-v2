@@ -77,7 +77,7 @@ const data = [
   {
     title: 'Mongoose',
     description: `I use Mongoose as ORM for MongoDB when I work with Node.js application.`,
-    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fmongoose.jpg?alt=media&token=1bfc0bd0-0100-4cff-8a15-7f88d63b9607`,
   },
   {
     title: 'Redis',

@@ -40,6 +40,7 @@ body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   transition: background-color 0.2s, color 0.2s;
+  height: 100vh;
 }
 
 code {
@@ -53,4 +54,8 @@ li {
 li ul li {
   list-style: none;
   padding-bottom: 0.1em;
+}
+
+#iamassumingyouareadevelopertoo {
+  height: 100%;
 }

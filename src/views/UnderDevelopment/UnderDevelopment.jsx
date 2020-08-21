@@ -5,15 +5,9 @@ import PropTypes from 'prop-types';
 
 import classes from './UnderDevelopment.module.scss';
 
-const termLines = [
-  {
-    text: 'Oops! This is under development. ☹️',
-    cmd: true,
-  },
-];
-
 const UnderDevelopment = props => {
   const { appState, progress } = props;
+  const termLines = [{ text: 'Oops! This is under development. ☹️', cmd: true }];
   if (progress) termLines.push({ text: 'But the good news is:', cmd: true }, { text: `The progress is almost ${progress}%`, cmd: true });
 
   return (
