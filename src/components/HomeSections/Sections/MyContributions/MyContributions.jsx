@@ -40,7 +40,7 @@ const PersonalProjects = props => {
           <a className="fw6 green no-underline underline-hover" href="https://github.com/tahsinature/cross-tools">
             cross-tools
           </a>
-          : I made some fundamental tools cross-platform that developers need day to day basis.
+          : I cross-platformed some fundamental tools that developers need day to day basis.
         </li>
       </ul>
     </section>
