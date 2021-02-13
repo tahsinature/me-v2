@@ -1,4 +1,4 @@
-## temp command (run like from your host machine)
+## temp command (run like from your host machine from docker)
 
 ```bash
 docker build -t me-v2 .
