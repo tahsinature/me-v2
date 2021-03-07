@@ -40,7 +40,7 @@ const data = [
   // },
   {
     title: 'Jest',
-    description: `Previously I was using Jasmine for testing. Now using Jest for couple of years now.`,
+    description: `Previously I was using Jasmine for testing. Now using Jest since 2019.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fjest-logo.jpg?alt=media&token=a97a9453-7782-4a0f-bde4-915274ebbff9`,
     display: true,
   },
@@ -53,6 +53,11 @@ const data = [
     title: 'Redux',
     description: `If I use React or React Native apps, redux will take place there for sure.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredux-logo.png?alt=media&token=2868fad7-92b8-46d3-be0c-fa1b6039b1d1`,
+  },
+  {
+    title: 'Redux Saga',
+    description: `I use it to handle side effects of react or, react-native apps.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredux-saga-logo.png?alt=media&token=ae773577-05bb-44b2-aaed-e7408447c9a3`,
   },
   {
     title: 'Sass',
@@ -69,31 +74,42 @@ const data = [
     description: `Of course you can say, "Every minute I use Git on GitHub and GitLab". Literally.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fgit-logo.png?alt=media&token=48901fa3-44ad-43c3-8f1f-88fa5074f7e5`,
   },
+  // {
+  //   title: 'Sequelize',
+  //   description: `I use Sequelize as ORM for relational databases (Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server) when I work with Node.js application.`,
+  //   image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4`,
+  // },
   {
-    title: 'Sequelize',
-    description: `I use Sequelize as ORM for relational databases (Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server) when I work with Node.js application.`,
-    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fsequelize-logo.svg?alt=media&token=e5377e6a-767d-4139-a4a3-b548f2eae8b4`,
+    title: 'ORM / ODM',
+    description: `I use Mongoose, Sequelize & TypeORM to deal with the databases I work on day-to-day.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fops_manager_backup-k53o3agwfc.png?alt=media&token=483ca954-f87a-4b4e-a73e-fb8d82b52869`,
   },
-  {
-    title: 'Mongoose',
-    description: `I use Mongoose as ORM for MongoDB when I work with Node.js application.`,
-    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fmongoose.jpg?alt=media&token=1bfc0bd0-0100-4cff-8a15-7f88d63b9607`,
-  },
+  // {
+  //   title: 'Mongoose',
+  //   description: `I use Mongoose as ORM for MongoDB when I work with Node.js application.`,
+  //   image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fmongoose.jpg?alt=media&token=1bfc0bd0-0100-4cff-8a15-7f88d63b9607`,
+  // },
   {
     title: 'Redis',
     description: `I've been using Redis for caching & scheduling. I love it for those purposes.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fredis-logo.png?alt=media&token=f39a4fde-2be6-407d-8e87-7f97e7c1c2dd`,
   },
+
   {
-    title: 'Postgres',
-    description: `My first choice for relational databases.`,
-    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FPostgresql_elephant.svg?alt=media&token=32805678-a9c7-440b-a53b-e2ccd738ae1e`,
+    title: 'Databases',
+    description: `So far I've worked with Postgres, MongoDB & MySQL.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fdatabases-logo.png?alt=media&token=5e140a2a-ff2f-45e0-a934-a83b0d6491fd`,
   },
-  {
-    title: 'MongoDB',
-    description: `For my most of the work, I try to use MongoDB when it fits.`,
-    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FMongoDB_logo_01.png?alt=media&token=1bb52314-5e09-4e61-bd11-ce2c289f465b`,
-  },
+  // {
+  //   title: 'Postgres',
+  //   description: `My first choice for relational databases.`,
+  //   image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FPostgresql_elephant.svg?alt=media&token=32805678-a9c7-440b-a53b-e2ccd738ae1e`,
+  // },
+  // {
+  //   title: 'MongoDB',
+  //   description: `For my most of the work, I try to use MongoDB when it fits.`,
+  //   image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2FMongoDB_logo_01.png?alt=media&token=1bb52314-5e09-4e61-bd11-ce2c289f465b`,
+  // },
   {
     title: 'Firebase',
     description: `I love this platform. I feel so comfortable and confident as it's backed by Google`,
@@ -109,6 +125,12 @@ const data = [
     title: 'HashiCorp Vault',
     description: `It's a single source of truth to manage credentials. I use it for storing application API keys, passwords, certificates and other sensitive data.`,
     image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fhashicorp-vault-logo.png?alt=media&token=950f4c59-a5b0-4eaf-8b1b-683c8889e4c4`,
+    display: true,
+  },
+  {
+    title: 'Selenium',
+    description: `I use it to automate browser related stuffs as well as to write e2e test.`,
+    image: `https://firebasestorage.googleapis.com/v0/b/global-daf32.appspot.com/o/me%2Fselenium%20logo.png?alt=media&token=150ada39-5351-4636-8365-52064190df68`,
     display: true,
   },
 ];
