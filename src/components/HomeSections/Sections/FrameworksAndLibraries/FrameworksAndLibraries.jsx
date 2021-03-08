@@ -39,7 +39,7 @@ const FrameworksAndLibraries = props => {
           <a className="fw6 green no-underline underline-hover" href="https://www.google.com/">
             Angular
           </a>
-          : I learned it from my curiosity. Yeah, it helped me to grasp many terminologies.
+          : I learned it from my curiosity. Yeah, it helped me to grasp many concepts.
         </li>
       </ul>
     </section>
